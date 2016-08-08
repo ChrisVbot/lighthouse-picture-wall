@@ -5,11 +5,16 @@ body {
   
   h1 {
   color: $primaryColor;
+  text-align: center;
   }
 }
 
 #team-members {
   clear: both;
+
+  h2 {
+  text-align: center;
+  }
   
   .member {
     float: left;
@@ -22,6 +27,7 @@ body {
         left: 0;
         width: 200px;
         height: 200px;
+        border-radius: 100%;
       }
       
       .hoverPhoto {
@@ -31,14 +37,23 @@ body {
          left: 3%;
          bottom: 0;
          opacity: 0;
+         border-radius: 100%;
+         transition: all 0.2s ease-out;
        }      
+       
        .hoverPhoto:hover{
+        transition: all .3s ease-in;
         opacity: 1;
+        border-radius: 60%;
+        transform: scale(1.05);
+        border-radius: 40%;
+        box-shadow: 5px 5px 2px #888888;
        }
 
-      
       div.name {
         text-align: center;
+        font-family: Helvetica, Arial, sans-serif;
+        font-style: oblique;
       }
   
   }
