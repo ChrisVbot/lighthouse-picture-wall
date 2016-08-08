@@ -1,6 +1,8 @@
 body {
   font-family: Verdana;
   font-size: 1.5em; }
+  body h1 {
+    color: #FF0000; }
 
 #team-members {
   clear: both; }
@@ -8,14 +10,22 @@ body {
     float: left;
     /*border: 1px solid gray;*/
     margin: 10px;
-    padding: 6px; }
+    padding: 6px;
+    position: relative; }
     #team-members .member img {
+      left: 0;
       width: 200px;
       height: 200px; }
+    #team-members .member .hoverPhoto {
+      position: absolute;
+      top: 2.5%;
+      right: 0;
+      left: 3%;
+      bottom: 0;
+      opacity: 0; }
+    #team-members .member .hoverPhoto:hover {
+      opacity: 1; }
     #team-members .member div.name {
       text-align: center; }
-
-body h1 {
-  color: #FF0000; }
 
 /*# sourceMappingURL=style.css.map */
